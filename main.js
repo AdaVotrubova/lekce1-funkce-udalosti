@@ -1,7 +1,8 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
-
+function vysledek(){
+  document.querySelector("#vysledek").innerHTML = secti(4, 5);
+}
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
  *
@@ -23,9 +24,14 @@ function upozorni() {
 }
 
 function zmenBarvu(){
-  let ctverecGreen = document.getElementsByClassName("ctverecek");
+  let ctverecGreen = document.querySelector(".ctverecek");
   ctverecGreen.style.backgroundColor = 'green';
+
+  let zmenaNapisu = document.querySelector(".ctverecek");
+  zmenaNadpisu.innerHTML="Gratulace, právě jsi spustila tuto funkci!";
 }
+
+
 
 /** Vytvořte tlačítko, při jehož stisknutí se změní barva <strong>Čtvereček</strong> na zelenou.*/
 
