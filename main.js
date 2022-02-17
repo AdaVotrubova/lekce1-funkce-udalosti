@@ -26,10 +26,10 @@ function upozorni() {
 function zmenBarvu(){
   let ctverecGreen = document.querySelector(".ctverecek");
   ctverecGreen.style.backgroundColor = 'green';
-
-  let zmenaNapisu = document.querySelector(".ctverecek");
-  zmenaNadpisu.innerHTML="Gratulace, právě jsi spustila tuto funkci!";
+  ctverecGreen.textContent="Gratulace, právě jsi spustila tuto funkci!";
+  ctverecGreen.style.width="400px"
 }
+
 
 
 
