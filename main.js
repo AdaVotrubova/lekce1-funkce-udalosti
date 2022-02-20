@@ -21,14 +21,22 @@ function secti(a, b) {
 function upozorni() {
   alert("Gratulace, právě jsi spustila tuto funkci!");
   console.log("Gratulace, právě jsi spustila tuto funkci!")
+<<<<<<< HEAD
   let ctverecText = document.querySelector(".ctverecek");
   ctverecText.textContent="Gratulace, právě jsi spustila tuto funkci!";
   ctverecText.style.width="400px"
+=======
+>>>>>>> 2c598fbac717dcc53fa43b09b0bf1f9a9f100345
 }
 
 function zmenBarvu(){
   let ctverecGreen = document.querySelector(".ctverecek");
   ctverecGreen.style.backgroundColor = 'green';
+<<<<<<< HEAD
+=======
+  ctverecGreen.textContent="Gratulace, právě jsi spustila tuto funkci!";
+  ctverecGreen.style.width="400px"
+>>>>>>> 2c598fbac717dcc53fa43b09b0bf1f9a9f100345
 }
 
 
