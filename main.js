@@ -1,15 +1,41 @@
 // tady je místo pro náš program
 
-let jmeno = "Ada";
-let vek = "39";
+function vysledek(){
+  document.querySelector("#vysledek").innerHTML = secti(4, 5);
+}
+/**
+ * Sečte dvě čísla na vstupu a vrátí výsledek
+ *
+ * @param {int} a
+ * @param {int} b
+ */
+function secti(a, b) {
+  let c = a + b;
+  return c;
+}
 
-let nadpis = document.querySelector('h1');
-nadpis.style.color =  'red';
 
-let odstavec = document.querySelector("h2")
-odstavec.style.fontSize = "5px";
+/**
+ * Upozorní uživatele při spuštění.
+ */
+function upozorni() {
+  alert("Gratulace, právě jsi spustila tuto funkci!");
+  console.log("Gratulace, právě jsi spustila tuto funkci!")
+  let ctverecText = document.querySelector(".ctverecek");
+  ctverecText.textContent="Gratulace, právě jsi spustila tuto funkci!";
+  ctverecText.style.width="400px"
+}
 
-document.querySelector('img').src = 'pes.jpg';
+function zmenBarvu(){
+  let ctverecGreen = document.querySelector(".ctverecek");
+  ctverecGreen.style.backgroundColor = 'green';
+}
 
-let squareElement = document.querySelector(".ctverecek");
-squareElement.style.transform = 'rotate(180deg)';
+
+
+
+/** Vytvořte tlačítko, při jehož stisknutí se změní barva <strong>Čtvereček</strong> na zelenou.*/
+
+/**Upravte kód tak, aby se výsledek funkce <em>secti()</em> zobrazil v prvku s ID <strong>vysledek</strong> až po stiknutí nově přidaného tlačítka "Zobraz výsledek */
+
+/** Uprav funkci <em>upozorni()</em> tak, aby se navíc vypisoval text i do konzole a také nahradil text v elementu <strong>Čtvereček</strong>.*/
